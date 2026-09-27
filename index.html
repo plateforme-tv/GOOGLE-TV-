@@ -166,7 +166,15 @@
   </style>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script></head>
 
-<body>
+<script>
+  const SUPABASE_URL = "https://zfppekhlwxewkxwwlsix.supabase.co";
+  const SUPABASE_KEY = "sb_publishable_r1fQtVmm5-BWltdyo60fXw_hyKe1NCL";
+
+  const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+  );
+</script><body>
 
   <header>
     <div class="logo">GOOGLE<span>-TV</span></div>
