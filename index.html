@@ -500,7 +500,7 @@ document.getElementById("register").addEventListener("submit", async function(ev
   const email = document.getElementById("registerEmail").value;
   const password = document.getElementById("registerPassword").value;
 
-  const { data, error } = await supabaseClient.auth.signUp({
+  const { error } = await supabaseClient.auth.signUp({
     email: email,
     password: password,
     options: {
@@ -520,8 +520,9 @@ document.getElementById("register").addEventListener("submit", async function(ev
 
   message.style.display = "none";
 
-document.getElementById("register").style.display = "none";
-document.getElementById("activationScreen").style.display = "block";
+  document.getElementById("register").style.display = "none";
+  document.getElementById("activationScreen").style.display = "block";
+});
   </script>
 
 </body>
