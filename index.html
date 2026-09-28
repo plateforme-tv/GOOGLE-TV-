@@ -131,7 +131,7 @@
   .activation-container h1 {
     font-size: 26px;
   }
-}<style>
+} <style>
     * {
       box-sizing: border-box;
       margin: 0;
@@ -532,9 +532,10 @@ document.getElementById("register").addEventListener("submit", async function(ev
     return;
   }
 
-  message.textContent =
-    "Compte créé avec succès ! Votre compte est en attente d'activation.";
-});
+  message.style.display = "none";
+
+document.getElementById("register").style.display = "none";
+document.getElementById("activationScreen").style.display = "block";
   </script>
 
 </body>
