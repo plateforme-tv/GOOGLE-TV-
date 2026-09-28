@@ -465,7 +465,12 @@
   message.textContent = "Connexion réussie !";
 });
 
+function showForm(formId) {
+  document.getElementById("login").classList.remove("active");
+  document.getElementById("register").classList.remove("active");
 
+  document.getElementById(formId).classList.add("active");
+    }
 document.getElementById("register").addEventListener("submit", async function(event) {
   event.preventDefault();
 
