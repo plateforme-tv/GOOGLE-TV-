@@ -466,17 +466,18 @@
 });
 
 function showForm(formId, button) {
-  document.getElementById("login").style.display = "none";
-  document.getElementById("register").style.display = "none";
+function showForm(formId, button) {
+  document.getElementById("login").classList.remove("active");
+  document.getElementById("register").classList.remove("active");
 
-  document.getElementById(formId).style.display = "block";
+  document.getElementById(formId).classList.add("active");
 
   document.querySelectorAll(".tab").forEach(function(tab) {
     tab.classList.remove("active");
   });
 
   button.classList.add("active");
-                                            }
+}
 document.getElementById("register").addEventListener("submit", async function(event) {
   event.preventDefault();
 
