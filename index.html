@@ -280,13 +280,13 @@
     <div class="card">
 
       <div class="tabs">
-        <button class="tab active" onclick="showForm('login')">
-          Connexion
-        </button>
+        <button type="button" class="tab active" onclick="showForm('login', this)">
+  Connexion
+</button>
 
-        <button type="button" class="tab" onclick="document.getElementById('login').style.display='none'; document.getElementById('register').style.display='block';">
+<button type="button" class="tab" onclick="showForm('register', this)">
   Inscription
-        </button>
+</button>
       </div>
 
       <!-- CONNEXION -->
