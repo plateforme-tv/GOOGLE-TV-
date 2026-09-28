@@ -280,11 +280,23 @@
     <div class="card">
 
       <div class="tabs">
-        <button type="button" class="tab active" onclick="showForm('login', this)">
+        <button type="button" class="tab active"
+  onclick="
+    document.getElementById('login').classList.add('active');
+    document.getElementById('register').classList.remove('active');
+    this.classList.add('active');
+    this.nextElementSibling.classList.remove('active');
+  ">
   Connexion
 </button>
 
-<button type="button" class="tab" onclick="showForm('register', this)">
+<button type="button" class="tab"
+  onclick="
+    document.getElementById('login').classList.remove('active');
+    document.getElementById('register').classList.add('active');
+    this.classList.add('active');
+    this.previousElementSibling.classList.remove('active');
+  ">
   Inscription
 </button>
       </div>
