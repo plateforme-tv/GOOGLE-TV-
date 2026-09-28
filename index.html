@@ -466,11 +466,11 @@
 });
 
 function showForm(formId) {
-  document.getElementById("login").classList.remove("active");
-  document.getElementById("register").classList.remove("active");
+  document.getElementById("login").style.display = "none";
+  document.getElementById("register").style.display = "none";
 
-  document.getElementById(formId).classList.add("active");
-    }
+  document.getElementById(formId).style.display = "block";
+}
 document.getElementById("register").addEventListener("submit", async function(event) {
   event.preventDefault();
 
