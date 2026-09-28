@@ -6,7 +6,132 @@
 
   <title>GOOGLE-TV</title>
 
-  <style>
+  #activationScreen {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.activation-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px 18px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.10);
+  text-align: center;
+}
+
+.activation-container h1 {
+  color: #111827;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.activation-intro {
+  color: #4b5563;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.activation-card {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 15px;
+  padding: 16px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+}
+
+.activation-card h2 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+.activation-card p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.icon-circle {
+  min-width: 42px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.success-card {
+  background: #ecfdf5;
+  border: 1px solid #86efac;
+}
+
+.success-card .icon-circle {
+  background: #16a34a;
+  color: white;
+}
+
+.success-card h2 {
+  color: #15803d;
+}
+
+.pending-card {
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+}
+
+.pending-card .icon-circle {
+  background: #f97316;
+  color: white;
+}
+
+.pending-card h2 {
+  color: #ea580c;
+}
+
+.access-card {
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+}
+
+.access-card .icon-circle {
+  background: #6b7280;
+  color: white;
+}
+
+.access-card h2 {
+  color: #374151;
+}
+
+.activation-note {
+  margin-top: 20px;
+  padding: 18px;
+  background: #fff7ed;
+  border: 2px solid #f97316;
+  border-radius: 12px;
+  color: #9a3412;
+  line-height: 1.6;
+  font-size: 14px;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .activation-container {
+    margin: 10px;
+    padding: 20px 14px;
+  }
+
+  .activation-container h1 {
+    font-size: 26px;
+  }
+}<style>
     * {
       box-sizing: border-box;
       margin: 0;
