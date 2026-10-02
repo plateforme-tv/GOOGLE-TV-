@@ -478,18 +478,7 @@
 });
 
 function showForm(formId, button) {
-function showForm(formId, button) {
-  document.getElementById("login").classList.remove("active");
-  document.getElementById("register").classList.remove("active");
 
-  document.getElementById(formId).classList.add("active");
-
-  document.querySelectorAll(".tab").forEach(function(tab) {
-    tab.classList.remove("active");
-  });
-
-  button.classList.add("active");
-}
 document.getElementById("register").addEventListener("submit", async function(event) {
   event.preventDefault();
 
